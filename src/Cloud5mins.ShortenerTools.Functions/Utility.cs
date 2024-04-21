@@ -48,7 +48,9 @@ namespace Cloud5mins.ShortenerTools
 
         public static string GetShortUrl(string host, string vanity)
         {
-            return host + "/" + vanity;
+            // HACK!!!!
+            // return host + "/" + vanity;
+            return "https://poem.link/" + vanity;
         }
 
         // generates a unique, random, and alphanumeric token for the use as a url 
