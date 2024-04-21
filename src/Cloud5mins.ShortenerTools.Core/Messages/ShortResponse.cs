@@ -11,10 +11,7 @@ namespace Cloud5mins.ShortenerTools.Core.Messages
         {
             
             LongUrl = longUrl;
-            // ShortUrl = string.Concat(host, "/", endUrl);
-
-            // HACK to use the proper custom domain
-            ShortUrl = endUrl;
+            ShortUrl = string.Concat(host, "/", endUrl);
             Title = title;
 
         }
